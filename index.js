@@ -1,9 +1,7 @@
 // code your solution here
-function superbowlWin(record) {
-    record = record.find(obj => obj.result === "W")
-    if (record) {
-        return record.year
-    } else {
-        return undefined
+function superbowlWin(superbowlResults) {
+    const winningYear = superbowlResults.find(result => result.result === "W")
+    if (winningYear) {
+        return winningYear.year
     }
 }
